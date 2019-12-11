@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+
+	body {
+  background-image: url('https://images.clipartlogo.com/files/istock/previews/9171/91718337-blank-vertical-book.jpg');
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+body, html {
+  height: 180%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 3px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.zoom {
+  padding: 30px;
+  transition: transform .2s;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 90px;
+  font-size: 18px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -9px;
+  right: -20px;
+  padding: 2px 6px;
+  border-radius: 100%;
+  background: red;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="row">
+		<div class="column">
+	  		<div class="card">
+	  			<div class="zoom">
+				<a href="/atlas"> 
+	  				<img src="https://products-images.di-static.com/image/sophie-koechlin-le-grand-atlas-disney/9782017088929-475x500-1.jpg" alt="Le grand atlas Disney" style="width:100%">
+	  			</a>
+	  			</div>
+	 		 	<h3>Le grand atlas Disney</h3> 
+	  			<h3 class="price" style="color:red;">16,95 €</h3>
+	 			<p>Sophie Koechlin</p>
+	  			<p><button onclick="function() " id="demo" >Add to Cart</button></p>
+
+  			
+			</div>
+	 	 </div>
+		<div class="column">
+			<div class="card">
+				<div class="zoom">
+					<a href="/chateau">
+					<img src="https://products-images.di-static.com/image/felix-delep-le-chateau-des-animaux-tome-1-miss-bengalore/9782203148888-475x500-1.jpg" alt="Le Château des animaux Tome 1" style="width:100%">
+					</a>
+				</div>
+			  <h3>Le Château des animaux </h3>
+			  <h3 class="price" style="color:red;">15,95 €</h3>
+			  <p>Félix Delep</p>
+			  <p><button onclick="myFunction()">Add to Cart</button></p>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<div class="zoom">
+					<a href="/animals">
+			  		<img src="https://products-images.di-static.com/image/christopher-bonanos-steve-mccurry/9783836575379-475x500-1.jpg" style="width:100%">
+			  		</a>
+			  	</div>
+			  <h3>Steve McCurry - Animals</h3>
+			  <h3 class="price" style="color:red;">50,00 €</h3>
+			  <p>Christopher Bonanos</p>
+			  <p><button onclick="myFunction()">Add to Cart</button></p>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

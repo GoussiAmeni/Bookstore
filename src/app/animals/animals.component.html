@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.checked {
+  color: orange;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 30%;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="column">
+      <img src="https://products-images.di-static.com/image/christopher-bonanos-steve-mccurry/9783836575379-475x500-1.jpg" style="width:80%">
+      <br><br>
+        <form action="/action_page.php">
+            <input type="submit" value="Add to cart" title="Buy Now !">
+        </form>
+    </div>
+    <div class="column">
+    	<form>
+    		<h1>Steve McCurry - Animals</h1>
+    		<p> Edition français-anglais-allemand</p>
+    		<p><b>Authors:</b> Christopher Bonanos, Reuel Golden, Steve McCurry</p>
+    		<br>
+    		<p><b>Description:</b>&nbsp;D'un éléphant appuyant tendrement sa tête contre l'arbre où s'est perché son maître, à un chien conduit parmi les ruines de Kaboul à l'arrière d'un vélo, les images de Steve McCurry racontent mille histoires, chacune porteuse d'une leçon d'humanité. </p>
+    		<p>Le célèbre photographe et journaliste présente ses photos d'animaux préférées dans une collection kaléidoscopique balayant la planète de l'Asie aux Caraïbes, des Etats- Unis à l'Afrique de l'Est. </p>
+    		<h3><p style="color:red;"><b>Price:</b> &nbsp;50,00 €</p></h3>
+
+    		<p><b>Available:</b> &nbsp;Yes</p>
+
+    		<h3>Rate the book:</h3>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+
+    	</form>
+    	<br><br>
+    	<form action="/action_page.php">
+
+        <label for="subject">What do you think ?</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Comment" title="Explain yourself">
+      	</form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
